@@ -1,4 +1,18 @@
-# Dashboard
+# LLM Analytics Dashboard
+
+A full-stack analytics workspace with a React/Vite client and FastAPI service. The project explores dataset upload, analysis sessions and LLM-assisted interpretation while keeping application authentication and data-processing behavior explicit.
+
+**Current engineering status:** local development prototype. The frontend and backend can be run separately; the documented Docker Compose frontend path does not yet match the active `app/` directory. Do not interpret local verification tokens, development fallbacks or demo authentication flows as production security.
+
+## Project map
+
+| Component | Location | Purpose |
+| --- | --- | --- |
+| Frontend | `app/` | React UI and session workflow |
+| Backend | `llm-dashboard/backend/` | FastAPI API, authentication and analysis |
+| Deployment configuration | `llm-dashboard/` | Compose files requiring frontend-path reconciliation |
+
+The setup instructions below describe the existing local workflow. For an Internet-facing deployment, replace development verification-token responses with a proper email delivery flow, review data retention and authentication, and verify the deployment configuration first.
 
 ## Prerequisites
 - Node.js 20+
